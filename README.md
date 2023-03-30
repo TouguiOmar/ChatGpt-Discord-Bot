@@ -1,2 +1,2 @@
-# ChatGpt Discord
+# ChatGpt Discord Bot
  
