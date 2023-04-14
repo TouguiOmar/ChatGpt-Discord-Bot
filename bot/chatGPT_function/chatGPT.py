@@ -8,14 +8,12 @@ intents.members = True
 intents.guilds = True
 bot = commands.Bot(command_prefix='&', intents=intents)
 
-openai.api_key = "YOUR-OPEN-AI-API-GOES HERE"
 
-
-def run_discord_bot():
+def run_discord_bot(discord_token, openai_api):
 
     # Discord Bot Token
-    token = 'YOUR-BOT-TOKEN-GOES-HERE'
-
+    token = discord_token
+    openai.api_key = openai_api
     @bot.command()
     async def gpt(ctx, *args):
         query = " ".join(args)
